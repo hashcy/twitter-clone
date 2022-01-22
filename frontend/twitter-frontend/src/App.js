@@ -1,10 +1,21 @@
+import { Route, Switch } from "react-router-dom";
+import styled from "styled-components";
+import { GlobalStyle } from "./GlobalStyle";
 
 function App() {
   return (
-    <div className="App">
-     
-    </div>
+    <AppContainer>
+     <GlobalStyle />
+     <Switch>
+      <Route exact path="/" component={} />
+
+     </Switch>
+    </AppContainer>
   );
 }
 
 export default App;
+
+/* ---------------------------- STYLED COMPONENTS --------------------------- */
+
+const AppContainer = styled.div``
