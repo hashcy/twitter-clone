@@ -1,2 +1,5 @@
 node_modules
 package-lock.json
+sensitiveInfo.json
+
+../client_secret_886534483556-418co4pdb1591hff83kg5l75lh0hm7ic.apps.googleusercontent.com.json
