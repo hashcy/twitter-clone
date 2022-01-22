@@ -1,0 +1,23 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "Banckend code base for twitter clone",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hashcy/twitter-clone.git"
+  },
+  "author": "Mritunjay Kumar Mani",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hashcy/twitter-clone/issues"
+  },
+  "homepage": "https://github.com/hashcy/twitter-clone#readme",
+  "dependencies": {
+    "express": "^4.17.2",
+    "mongoose": "^6.1.7"
+  }
+}
