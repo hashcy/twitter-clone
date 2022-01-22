@@ -1,13 +1,14 @@
 import { Route, Switch } from "react-router-dom";
 import styled from "styled-components";
-import { GlobalStyle } from "./GlobalStyle";
+import { GlobalStyles } from "./GlobalStyles";
+import { EntryPage } from "./Pages";
 
 function App() {
   return (
     <AppContainer>
-     <GlobalStyle />
+     <GlobalStyles />
      <Switch>
-      {/* <Route exact path="/" component={} /> */}
+      <Route exact path="/" component={EntryPage} />
 
      </Switch>
     </AppContainer>
@@ -19,3 +20,4 @@ export default App;
 /* ---------------------------- STYLED COMPONENTS --------------------------- */
 
 const AppContainer = styled.div``
+
