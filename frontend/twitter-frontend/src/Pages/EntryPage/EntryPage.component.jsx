@@ -1,8 +1,13 @@
 import styled from "styled-components";
-import {useHistory, withRouter} from "react-router-dom";
-const EntryPage = ({match}) => {
-    console.log(match)
+import {Redirect, useHistory, useLocation, withRouter} from "react-router-dom";
+const EntryPage = () => {
     const history = useHistory();
+    const location = useLocation();
+
+    console.log(location);
+
+    const handleClick = () => window.location.href="localhost:8000/api/login/google";
+    
   return (
     <Container>
       <div className="row">
@@ -12,7 +17,7 @@ const EntryPage = ({match}) => {
         <div className="column-2">
           <h1>Happening now</h1>
           <h3>Join Twitter today.</h3>
-          <button className="google" onClick={()=>{history.push(`/api/login/google`)}}>Sign up with Google</button>
+          <button className="google" onClick={handleClick}>Sign up with Google</button>
           <br></br>
           <button className="apple" type="onclick">Sign up with Apple</button>
           <p>----------or----------</p>
