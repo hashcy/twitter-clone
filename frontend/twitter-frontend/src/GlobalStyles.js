@@ -13,6 +13,6 @@ export const GlobalStyles = createGlobalStyle`
 
     :root {
             --black-shade-1 : #000000;
-        
+            --white-shade-1 : #ffffff;
         }
 `;
