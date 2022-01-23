@@ -4,10 +4,10 @@ const EntryPage = () => {
   return (
     <Container>
       <div className="row">
-        <div className="column 1">
+        <div className="column-1">
           <img src="/Assets/Images/twitter-bcg.png" alt="twitter" />
         </div>
-        <div className="column 2">
+        <div className="column-2">
           <h1>Happening now</h1>
           <h3>Join Twitter today.</h3>
           <button className="google" type="onclick">Sign up with Google</button>
@@ -36,4 +36,6 @@ const Container = styled.div`
         justify-content: center;
         
     }
+
+    .column
 `;
