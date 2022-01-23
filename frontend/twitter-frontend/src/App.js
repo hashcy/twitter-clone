@@ -1,6 +1,6 @@
 import { Route, Switch } from "react-router-dom";
 import styled from "styled-components";
-import { Home } from "./Components";
+import { Home, Profile } from "./Components";
 import { GlobalStyles } from "./GlobalStyles";
 import { EntryPage } from "./Pages";
 
@@ -11,6 +11,7 @@ function App() {
       <Switch>
         <Route exact path="/" component={EntryPage} />
         <Route exact path="/home" component={Home} />
+        <Route exact path="/profile" component={Profile} />
       </Switch>
     </AppContainer>
   );
