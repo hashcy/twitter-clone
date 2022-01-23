@@ -23,5 +23,5 @@ export default App;
 const AppContainer = styled.div`
   background-color: var(--black-shade-1);
 
-  min-height: 100vh;
+  min-height: 1000vh;
 `;
