@@ -3,7 +3,7 @@ const userModal = require("../modal/user");
 
 const authRedirect = {
     "googleRedirect": (req,res) => {
-        console.log(req,'google redirect req');
+        console.log(req.user,'google redirect req');
         res.redirect('/me');
     }
 };
