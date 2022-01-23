@@ -1,6 +1,7 @@
 import styled from "styled-components";
 // import { ReactComponent as Stars } from "../../SVGs/stars.svg";
-
+import stars from "./stars.svg";
+import pic from "./pic.svg"
 const Home = () => {
   return (
     <Container>
@@ -8,7 +9,7 @@ const Home = () => {
         <div className="center">
           <span>Home</span>
           <div className="svg-container">
-            <img src="/Assets/Images/Svg/stars.svg" alt="" />
+            <img src={pic} alt="" />
           </div>
         </div>
       </NavContainer>
@@ -45,6 +46,10 @@ const Container = styled.section`
   position: relative;
 
   color: var(--white-shade-1);
+  
+  svg {
+    color: white;
+  }
 `;
 
 const NavContainer = styled.nav`
@@ -74,5 +79,13 @@ const NavContainer = styled.nav`
     /* span {
       font-size: 1.5rem;
     } */
+  }
+  img{
+  
+    width: 2rem;
+    height: 2rem;
+  }
+  svg{
+
   }
 `;
