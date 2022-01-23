@@ -11,6 +11,7 @@ const EntryPage = () => {
                 <div className="column 2">
                     <h1>Happening now</h1>
                     <h3>Join Twitter today.</h3>
+                    <button></button>
 
                 </div>
             </div>
