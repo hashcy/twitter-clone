@@ -1,7 +1,7 @@
 import styled from "styled-components";
 // import { ReactComponent as Stars } from "../../SVGs/stars.svg";
 import stars from "./stars.svg";
-import pic from "./pic.svg"
+import pic from "./pic.svg";
 const Home = () => {
   return (
     <Container>
@@ -46,7 +46,7 @@ const Container = styled.section`
   position: relative;
 
   color: var(--white-shade-1);
-  
+
   svg {
     color: white;
   }
@@ -80,12 +80,10 @@ const NavContainer = styled.nav`
       font-size: 1.5rem;
     } */
   }
-  img{
-  
+  img {
     width: 2rem;
     height: 2rem;
   }
-  svg{
-
+  svg {
   }
 `;
