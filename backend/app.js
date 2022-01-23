@@ -7,7 +7,7 @@ const loginRoute = require('./router/login');
 const authRedirect = require('./router/authRedirect');
 const userProfile = require('./router/me');
 const session = require('express-session');
-
+const isAuthorized = require("./middleware/isAuthorized");
 const sensitiveInfo = require("./sensitiveInfo.json")
 
 mongoose.connect(sensitiveInfo.DATABASE, {
@@ -31,9 +31,9 @@ app.use(bodyParser.json());     //body parser middleware in json format
 
 //routes middleware
 //route for incoming api request
-app.use('/api/login',loginRoute);
+app.use('/api/',loginRoute);
 app.use('/auth',authRedirect)
-app.use('/me',userProfile);
+app.use('/me',isAuthorized, userProfile);
 
 const port = process.env.PORT || 8000;      //port to run server on
 
