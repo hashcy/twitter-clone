@@ -1,6 +1,8 @@
 import styled from "styled-components";
-
-const EntryPage = () => {
+import {useHistory, withRouter} from "react-router-dom";
+const EntryPage = ({match}) => {
+    console.log(match)
+    const history = useHistory();
   return (
     <Container>
       <div className="row">
@@ -10,7 +12,7 @@ const EntryPage = () => {
         <div className="column-2">
           <h1>Happening now</h1>
           <h3>Join Twitter today.</h3>
-          <button className="google" type="onclick">Sign up with Google</button>
+          <button className="google" onClick={()=>{history.push(`/api/login/google`)}}>Sign up with Google</button>
           <br></br>
           <button className="apple" type="onclick">Sign up with Apple</button>
           <p>----------or----------</p>
@@ -24,7 +26,7 @@ const EntryPage = () => {
   );
 };
 
-export default EntryPage;
+export default withRouter(EntryPage) ;
 
 /* ---------------------------- STYLED COMPONENTS --------------------------- */
 
